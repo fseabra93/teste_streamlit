@@ -25,7 +25,7 @@ if api_key:
         genai.configure(api_key=api_key)
         model = genai.GenerativeModel('gemini-1.5-flash')
     except Exception as e:
-        st.error(f"Erro ao configurar a API do Gemini: {e}")
+        st.error(f"Erro ao configurar com a API do Gemini: {e}")
         st.stop()
 else:
     st.info("Por favor, insira sua chave de API do Gemini na barra lateral para começar.")
